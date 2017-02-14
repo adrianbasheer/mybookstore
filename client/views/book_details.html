@@ -1,0 +1,17 @@
+<br  ng-init="getBook()"/>
+THIS IS THE BOOK DETAIL PAGE
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">{{book.title}}</h3>
+    </div>
+    <div class="panel-body">
+        <div class="col-md-3">
+            <img class="thumbnail" src="{{book.image_url}}">
+        </div>
+        <div class="col-md-5">
+            {{book.description}}<br/><br/>
+            <a class="btn btn-primary" href="#books/details/{{book._id}}">View Details</a>
+        </div>
+    </div>
+</div>
+
